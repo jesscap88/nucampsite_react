@@ -65,11 +65,11 @@ function CampsiteInfo(props) {
             <hr />
           </div>
         </div>
-          <div className="row">
-            <RenderCampsite campsite={props.campsite} />
-            <RenderComments comments={props.comments} />
-          </div>
+        <div className="row">
+          <RenderCampsite campsite={props.campsite} />
+          <RenderComments comments={props.comments} />
         </div>
+      </div>
     );
   }
   return <div />;
