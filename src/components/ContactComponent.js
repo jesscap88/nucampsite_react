@@ -93,7 +93,7 @@ class Contact extends Component {
           </div>
           <div className="col-md-10">
             <Form
-              model="feebackForm"
+              model="feedbackForm"
               onSubmit={(values) => this.handleSubmit(values)}
             >
               <Row className="form-group">

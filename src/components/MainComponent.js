@@ -32,7 +32,7 @@ const mapDispatchToProps = {
   postComment: (campsiteId, rating, author, text) =>
     postComment(campsiteId, rating, author, text),
   fetchCampsites: () => (fetchCampsites()),
-  resetFeedbackForm: () => (actions.reset("feebackForm")),
+  resetFeedbackForm: () => (actions.reset("feedbackForm")),
   fetchComments: () => (fetchComments()),
   fetchPromotions: () => (fetchPromotions()),
   fetchPartners:() => (fetchPartners()),
