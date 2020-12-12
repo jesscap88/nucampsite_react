@@ -7,7 +7,7 @@ import {
   Col,
   Row,
 } from "reactstrap";
-import { Control, Form, Errors, actions } from "react-redux-form";
+import { Control, Form, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 
 const required = (val) => val && val.length;
@@ -41,9 +41,8 @@ class Contact extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Current state is: " + JSON.stringify(values));
-    alert("Current state is: " + JSON.stringify(values));
     this.props.resetFeedbackForm();
+    this.props.postFeedback(values);
   }
 
   render() {
@@ -53,9 +52,10 @@ class Contact extends Component {
           <div className="col">
             <Breadcrumb>
               <BreadcrumbItem>
-                <Link to="/home">Home</Link>
+              {" "}
+                <Link to="/home">Home</Link>{" "}
               </BreadcrumbItem>
-              <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+              <BreadcrumbItem active>Directory</BreadcrumbItem>
             </Breadcrumb>
             <div className="row row-content align-items-center">
               <h2>Contact Us</h2>
